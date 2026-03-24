@@ -386,35 +386,7 @@
 
       classLabels.forEach((label) => {
         const id = safeId(label);
-        const item = document.createElement("div");
-        item.className = "result-item";
-        item.innerHTML = `
-          <div class="label-row">
-            <span>${label}</span>
-            <span id="percent-${id}">0%</span>
-          </div>
-          <div class="bar-bg">
-            <div class="bar" id="bar-${id}"></div>
-          </div>
-        `;
-        resultListEl.appendChild(item);
-      });
-    }
-
-    async function startWebcam() {
-      try {
-        stopWebcamOnly();
-
-        imagePreview.style.display = "none";
-        webcamContainer.innerHTML = "";
-
-        webcam = new tmImage.Webcam(420, 320, true);
-        await webcam.setup();
-        await webcam.play();
-
-        isWebcamRunning = true;
-        webcamContainer.appendChild(webcam.canvas);
-        statusEl.textContent = "웹캠이 실행되었습니다. 화면에 대상을 비춰보세요.";
+        const item봐. 화면 보라고..";
 
         loop();
       } catch (error) {
